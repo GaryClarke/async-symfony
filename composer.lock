@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48809d75bae86e25d9718afade8e07e9",
+    "content-hash": "c6fccf2580dc307f89714d1e3d1f9dd7",
     "packages": [
         {
             "name": "psr/cache",
@@ -1540,6 +1540,92 @@
                 }
             ],
             "time": "2022-06-26T17:06:14+00:00"
+        },
+        {
+            "name": "symfony/messenger",
+            "version": "v6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/messenger.git",
+                "reference": "c7e22722857c9d4a0d3a0f9d06a4f15984c4569f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/c7e22722857c9d4a0d3a0f9d06a4f15984c4569f",
+                "reference": "c7e22722857c9d4a0d3a0f9d06a4f15984c4569f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/log": "^1|^2|^3"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<5.4",
+                "symfony/event-dispatcher-contracts": "<2",
+                "symfony/framework-bundle": "<5.4",
+                "symfony/http-kernel": "<5.4",
+                "symfony/serializer": "<5.4"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0|^2.0|^3.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/event-dispatcher": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/process": "^5.4|^6.0",
+                "symfony/property-access": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/serializer": "^5.4|^6.0",
+                "symfony/service-contracts": "^1.1|^2|^3",
+                "symfony/stopwatch": "^5.4|^6.0",
+                "symfony/validator": "^5.4|^6.0"
+            },
+            "suggest": {
+                "enqueue/messenger-adapter": "For using the php-enqueue library as a transport."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Messenger\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Roze",
+                    "email": "samuel.roze@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Helps applications send and receive messages to/from other applications or via message queues",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/messenger/tree/v6.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-26T13:01:30+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",

@@ -16,6 +16,10 @@ class StockTransactionController extends AbstractController
     {
         // $notification->getOrder()->getBuyer()->getEmail()
         $order = new class {
+            public function getId()
+            {
+                return 1;
+            }
             public function getBuyer(): object
             {
                 return new class {

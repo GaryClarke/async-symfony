@@ -185,5 +185,10 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
 
 .idea/
-
 notes.txt
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+
+

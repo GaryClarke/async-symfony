@@ -6,8 +6,7 @@ Repository to accompany the YouTube series
 Requirements
 ------------
 
-* PHP 8.1.0 or higher;
-* PDO-SQLite PHP extension enabled;
+* PHP 8.1.0 or higher
 
 Installation
 ------------

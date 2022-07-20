@@ -24,6 +24,12 @@ Run the project:
 ```bash
 $ php -S localhost:8000 -t public/
 ```
+or
+
+```bash
+$ symfony server:start -d
+```
+
 Then access the application in your browser at the given URL (<https://localhost:8000> by default).
 
 Tests

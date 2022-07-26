@@ -6,3 +6,14 @@ services:
         image: schickling/mailcatcher
         ports: [ 1025, 1080 ]
     ###< symfony/mailer ###
+
+    database:
+        image: 'mysql:8.0'
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: main
+        ports:
+            - "3306"
+

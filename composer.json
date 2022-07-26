@@ -1,6 +1,5 @@
 {
     "name": "garyclarke/async-symfony",
-    "type": "library",
     "description": "Repository to accompany the async-symfony YouTube series",
     "type": "project",
     "license": "proprietary",

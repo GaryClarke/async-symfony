@@ -192,3 +192,5 @@ notes.txt
 ###< symfony/phpunit-bridge ###
 
 docker-compose.override.yml
+
+composer.lock

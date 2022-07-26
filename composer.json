@@ -1,4 +1,7 @@
 {
+    "name": "garyclarke/async-symfony",
+    "type": "library",
+    "description": "Repository to accompany the async-symfony YouTube series",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
@@ -80,7 +83,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
+            "allow-contrib": true,
             "require": "^6.0"
         }
     }

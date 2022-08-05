@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Message\Command\SaveOrder;
 use App\Message\PurchaseConfirmationNotification;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,25 +16,25 @@ class StockTransactionController extends AbstractController
     public function buy(MessageBusInterface $bus): Response
     {
         // $notification->getOrder()->getBuyer()->getEmail()
-        $order = new class {
-            public function getId()
-            {
-                return 1;
-            }
-            public function getBuyer(): object
-            {
-                return new class {
-                    public function getEmail(): string
-                    {
-                        return 'email@example.tech';
-                    }
-                };
-            }
-        };
+        //$order = new class {
+        //    public function getId()
+        //    {
+        //        return 1;
+        //    }
+        //    public function getBuyer(): object
+        //    {
+        //        return new class {
+        //            public function getEmail(): string
+        //            {
+        //                return 'email@example.tech';
+        //            }
+        //        };
+        //    }
+        //};
 
 
         // 1. Dispatch confirmation message
-        $bus->dispatch(new PurchaseConfirmationNotification($order->getId()));
+        $bus->dispatch(new SaveOrder());
 
         // 2. Display confirmation to the user
         return $this->render('stocks/example.html.twig');

@@ -4,6 +4,7 @@ namespace App\MessageHandler\Event;
 
 use App\Message\Event\OrderSavedEvent;
 use Mpdf\Mpdf;
+use Mpdf\Output\Destination;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 use Symfony\Component\Mime\Email;
@@ -22,7 +23,7 @@ class OrderSavedEventHandler implements MessageHandlerInterface
         $content .= '<p>Total: <b>$1898.75</b></p>';
 
         $mpdf->writeHtml($content);
-        $contractNotePdf = $mpdf->output('', 'S');
+        $contractNotePdf = $mpdf->output('', Destination::STRING_RETURN);
 
         // 2. Email the contract note to the buyer
 

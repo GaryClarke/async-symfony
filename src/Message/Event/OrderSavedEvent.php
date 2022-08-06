@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Message;
+namespace App\Message\Event;
 
-class PurchaseConfirmationNotification
+class OrderSavedEvent
 {
     public function __construct(private int|string $orderId)
     {

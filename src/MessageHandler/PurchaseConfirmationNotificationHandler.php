@@ -5,6 +5,7 @@ namespace App\MessageHandler;
 
 use App\Message\PurchaseConfirmationNotification;
 use Mpdf\Mpdf;
+use Mpdf\Output\Destination;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 use Symfony\Component\Mime\Email;
@@ -24,7 +25,7 @@ class PurchaseConfirmationNotificationHandler
         $content .= '<p>Total: <b>$1898.75</b></p>';
 
         $mpdf->writeHtml($content);
-        $contractNotePdf = $mpdf->output('', 'S');
+        $contractNotePdf = $mpdf->output('', Destination::STRING_RETURN);
 
         // 2. Email the contract note to the buyer
 

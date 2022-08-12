@@ -17,6 +17,9 @@ class OrderSavedEventHandler implements MessageHandlerInterface
 
     public function __invoke(OrderSavedEvent $event)
     {
+        // Attempt to retrieve an order from MongoDB
+        throw new \RuntimeException('ORDER COULD NOT BE FOUND');
+
         // 1. Create a PDF contract note
         $mpdf = new Mpdf();
         $content = "<h1>Contract Note For Order {$event->getOrderId()}</h1>";

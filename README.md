@@ -5,7 +5,7 @@ Repository to accompany the YouTube series
 
 Requirements
 ------------
-- [PHP 8.0 or higher](https://www.php.net/downloads.php)
+- [PHP 8.1 or higher](https://www.php.net/downloads.php)
 - [Composer](https://getcomposer.org/)
 - [Symfony CLI](https://symfony.com/download)
 <!-- - [Docker](https://www.docker.com/) -->
